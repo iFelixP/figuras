@@ -14,8 +14,15 @@ public class Application {
         Square squares[] = new Square[5];
         Triangle triangle = new Triangle(10, 20);
 
+        squares[0] = new Square(30);
+        squares[1] = new Square(5);
+        squares[2] = new Square(23);
+        squares[3] = new Square(14);
+        squares[4] = new Square(7);
+
 
         printFigure(circle1);
+        printFigure(circle2);
         printFigure(rectangle);
         for (Square square : squares) {
             printFigure(square);
@@ -43,6 +50,4 @@ public class Application {
         triangle.draw();
         System.out.println("Area: " + triangle.getArea());
     }
-
-
 }

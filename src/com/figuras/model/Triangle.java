@@ -3,6 +3,7 @@ package com.figuras.model;
 public class Triangle {
     private int base;
     private int height;
+    private float area;
 
     public Triangle(int base, int height) {
         this.base = base;
@@ -10,10 +11,11 @@ public class Triangle {
     }
 
     public double getArea() {
-        return 0;
+        area = (base * height)/2;
+        return area;
     }
 
     public void draw() {
-        System.out.println("Circulo");
+        System.out.println("Triángulo");
     }
 }
